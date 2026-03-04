@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ग्रामपंचायत प्रेझेंटेशन</title>
+    <style>
+        /* मुख्य डिझाइन */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            background-color: #f0f2f5;
+        }
+
+        /* नेव्हिगेशन बार */
+        .navbar {
+            background: #2c3e50;
+            color: white;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar h2 { margin: 0; font-size: 24px; }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        /* हिरो सेक्शन (मुख्य बॅनर) */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1508913922359-022abc985509?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 { font-size: 50px; margin-bottom: 10px; }
+
+        /* माहिती कार्ड्स */
+        .container {
+            padding: 40px 50px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            border-top: 5px solid #27ae60;
+            transition: 0.3s;
+        }
+
+        .card:hover { transform: translateY(-10px); }
+
+        .card h3 { color: #2c3e50; }
+
+        /* बटण */
+        .btn {
+            background: #27ae60;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <h2>डिजिटल ग्रामपंचायत</h2>
+        <div class="nav-links">
+            <a href="#">होम</a>
+            <a href="#">प्रकल्प</a>
+            <a href="#">योजना</a>
+            <a href="#">संपर्क</a>
+        </div>
+    </div>
+
+    <div class="hero">
+        <h1>आदर्श ग्राम, स्मार्ट ग्राम!</h1>
+        <p>पारदर्शक कारभार आणि डिजिटल सेवेचा संकल्प.</p>
+        <a href="#services" class="btn">अधिक माहिती</a>
+    </div>
+
+    <div class="container" id="services">
+        <h2 style="text-align:center; color:#2c3e50; margin-bottom:40px;">महत्त्वाची वैशिष्ट्ये (Features)</h2>
+        
+        <div class="grid">
+            <div class="card">
+                <h3>🏛️ ई-प्रशासन</h3>
+                <p>सर्व दाखले आणि कागदपत्रे आता ऑनलाईन उपलब्ध होतील, ज्यामुळे ग्रामस्थांचा वेळ वाचेल.</p>
+            </div>
+
+            <div class="card">
+                <h3>💡 स्मार्ट स्ट्रीट लाईट</h3>
+                <p>सौर उर्जेवर चालणारे दिवे आणि स्वयंचलित नियंत्रण प्रणालीचा वापर.</p>
+            </div>
+
+            <div class="card">
+                <h3>💧 जल व्यवस्थापन</h3>
+                <p>पाणीपुरवठा आणि सांडपाणी व्यवस्थापनासाठी आधुनिक तंत्रज्ञानाचा वापर.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; २०२६ | ग्रामपंचायत विकास प्रकल्प | सादरकर्ते: [तुमचे नाव]</p>
+    </footer>
+
+</body>
+</html>
